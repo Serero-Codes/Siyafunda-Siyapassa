@@ -4,40 +4,37 @@
 const EXTERNAL_LINKS = {
     // Study Guides External Links
     studyGuides: {
-        "Mathematics Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_Mathematics_MindTheGap_DBE.pdf",
+        "Mathematics Study Guide": "assets/TopStudent_Grd12_StudyGuide_Mathematics_MindTheGap_DBE.pdf",
         "Physical Sciences Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_Physics_MindTheGap_DBE.pdf",
-        "Life Sciences Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_LifeSci_MindTheGap_DBE.pdf",
-        "Geography Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_Geography_MindTheGap_DBE.pdf",
-        "Economics Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_Economics_MindTheGap_DBE.pdf",
-        "Business Studies Study Guide": "frontend/assets/TopStudent_Grd12_StudyGuide_BusinessStudy_P1_DBE.pdf",
-        "Accounting Study Guide": "https://mlwxxtvsozhwzjxmsvbg.supabase.co/storage/v1/object/sign/guides/Accounting/TopStudent_Grd12_StudyGuide_Accounting_MindTheGap_DBE.pdf?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV84MzZkM2M4Ny0zNGNiLTRmNTYtODAxYy05NmQ2ZGI5MTZiNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJndWlkZXMvQWNjb3VudGluZy9Ub3BTdHVkZW50X0dyZDEyX1N0dWR5R3VpZGVfQWNjb3VudGluZ19NaW5kVGhlR2FwX0RCRS5wZGYiLCJpYXQiOjE3NzkzNTE0MTIsImV4cCI6MTc3OTM1NTAxMn0.P8IF4c-xvFgb_rHeVQiIAAtMoGKwuW4iCHOsRaYZ1Hw",
-        "History Study Guide": "https://mlwxxtvsozhwzjxmsvbg.supabase.co/storage/v1/object/sign/guides/History/TopStudent_Grd12_StudyGuide_History_P1_DBE.pdf?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV84MzZkM2M4Ny0zNGNiLTRmNTYtODAxYy05NmQ2ZGI5MTZiNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJndWlkZXMvSGlzdG9yeS9Ub3BTdHVkZW50X0dyZDEyX1N0dWR5R3VpZGVfSGlzdG9yeV9QMV9EQkUucGRmIiwiaWF0IjoxNzc5MzUxNDE2LCJleHAiOjE3NzkzNTUwMTZ9.yJJhHHtoaPnA8vz73UT-UpJQtbU1-DfnbHbc7HuFCzc"
+        "Life Sciences Study Guide": "assets/TopStudent_Grd12_StudyGuide_LifeSci_MindTheGap_DBE.pdf",
+        "Geography Study Guide": "assets/TopStudent_Grd12_StudyGuide_Geography_MindTheGap_DBE.pdf",
+        "Economics Study Guide": "assets/TopStudent_Grd12_StudyGuide_Economics_MindTheGap_DBE.pdf",
+        "Business Studies Study Guide": "assets/TopStudent_Grd12_StudyGuide_BusinessStudy_P1_DBE.pdf",
+        "Accounting Study Guide": "assets/TopStudent_Grd12_StudyGuide_Accounting_MindTheGap_DBE.pdf",
+        "History Study Guide": "assets/TopStudent_Grd12_StudyGuide_History_P1_DBE.pdf"
     },
     
     // Subjects External Learning Resources
-    subjects: {
-        "Mathematics": "https://www.khanacademy.org/math",
-        "Physical Sciences": "https://www.khanacademy.org/science/physics",
-        "Life Sciences": "https://www.khanacademy.org/science/biology",
-        "Geography": "https://www.nationalgeographic.org/education/",
-        "Economics": "https://www.khanacademy.org/economics-finance-domain",
-        "Business Studies": "https://www.businessstudies.co.za/",
-        "Accounting": "https://www.accountingcoach.com/",
-        "History": "https://www.history.com/topics",
-        "English Home Language": "https://www.english-grammar-lessons.com/",
-        "Afrikaans First Additional Language": "https://www.afrikaans.com/resources",
-        "IsiXhosa Home Language": "https://www.xhosa.co.za/learning",
-        "IsiZulu Home Language": "https://www.zulu.co.za/learning"
+    pastPapers: {
+        "Mathematics Past Papers": "assets/papers/TopStudent_Mathematics_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Physical Sciences Past Papers": "assets/papers/TopStudent_PhysicalSciences_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Life Sciences Past Papers": "assets/papers/TopStudent_LifeSciences_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Geography Past Papers": "assets/papers/TopStudent_Geography_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Economics Past Papers": "assets/papers/TopStudent_Economics_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Business Studies Past Papers": "assets/papers/TopStudent_BusinessStudies_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "Accounting Past Papers": "assets/papers/TopStudent_Accounting_Grd12_2023_Nov_P1_QP_DBE.pdf",
+        "History ": "assets/papers/TopStudent_History_Grd12_2023_Nov_P1_QP_DBE.pdf",
+ 
     },
     
     // Past Papers External Links
-    pastPapers: {
-        "Mathematics Past Papers": "https://mlwxxtvsozhwzjxmsvbg.supabase.co/storage/v1/object/public/papers/Mathematics/TopStudent_Mathematics_Grd12_2024_June_P1_QP_DBE.pdf",
-        "Physical Sciences Past Papers": "https://www.education.gov.za/Examinations/PastExamPapers/PhysicalSciences.aspx",
-        "Life Sciences Past Papers": "https://www.education.gov.za/Examinations/PastExamPapers/LifeSciences.aspx",
-        "Geography Past Papers": "https://www.education.gov.za/Examinations/PastExamPapers/Geography.aspx",
-        "Economics Past Papers": "https://www.education.gov.za/Examinations/PastExamPapers/Economics.aspx",
-        "Business Studies Past Papers": "https://www.education.gov.za/Examinations/PastExamPapers/BusinessStudies.aspx"
+    subjects: {
+        "Mathematics": "pages/chatbot.html",
+        "Physical Sciences": "pages/chatbot.html",
+        "Life Sciences": "pages/chatbot.html",
+        "Geography": "pages/chatbot.html",
+        "Economics": "pages/chatbot.html",
+        "Business Studies": "pages/chatbot.html"
     }
 };
 
