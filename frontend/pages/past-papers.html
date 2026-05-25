@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Papers - Siyafunda Siya Passa</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="past-papers-page">
+        <!-- Header -->
+        <div class="papers-header">
+            <button class="back-button" onclick="window.location.href='../index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>Past Exam Papers</h1>
+        </div>
+
+        <!-- Daily Motivation Section -->
+        <div class="daily-motivation">
+            <div class="motivation-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="motivation-content">
+                <h3>Daily Motivation</h3>
+                <p id="motivationText">"Success is not final, failure is not fatal: it is the courage to continue that counts." - Winston Churchill</p>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="subjectSearch" placeholder="Filter by subject...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Subjects</button>
+                <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+                <button class="filter-btn" data-filter="physical sciences">Physical Sciences</button>
+                <button class="filter-btn" data-filter="life sciences">Life Sciences</button>
+                <button class="filter-btn" data-filter="geography">Geography</button>
+                <button class="filter-btn" data-filter="economics">Economics</button>
+                <button class="filter-btn" data-filter="business studies">Business Studies</button>
+            </div>
+        </div>
+
+        <!-- Papers Grid -->
+        <div class="papers-grid" id="papersGrid">
+            <!-- Past papers will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script src="../js/past-papers.js"></script>
+</body>
+</html>

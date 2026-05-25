@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBot - Siyafunda Siya Passa</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chatbot-page">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <button class="back-button" onclick="window.location.href='../index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <h2>EduBot - Your Study Assistant</h2>
+            </div>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="english">English</option>
+                    <option value="xhosa">isiXhosa</option>
+                    <option value="zulu">isiZulu</option>
+                </select>
+                <select id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Current Subject Badge -->
+        <div class="current-subject" id="currentSubject">
+            <i class="fas fa-graduation-cap"></i>
+            <span id="subjectName">General Study</span>
+        </div>
+
+        <!-- Chat Messages Container -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hi! I'm EduBot. I'm here to help you with your Grade 12 studies. What would you like to learn today?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <textarea id="messageInput" placeholder="Type your question here..." rows="1"></textarea>
+            <button id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
+</html>

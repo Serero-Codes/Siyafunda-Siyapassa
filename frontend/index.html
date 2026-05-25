@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siyafunda Siya Passa - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="assets/7683337-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Siyafunda</h2>
+                <p>Siya Passa</p>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="section-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Study Guides</span>
+                    </div>
+                    <div class="section-items" data-section="study-guides">
+                        <!-- Dynamic content will be added here -->
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <div class="section-title">
+                        <i class="fas fa-flask"></i>
+                        <span>Subjects</span>
+                    </div>
+                    <div class="section-items" data-section="subjects">
+                        <!-- Dynamic content will be added here -->
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <div class="section-title">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Past Papers</span>
+                    </div>
+                    <div class="section-items" data-section="past-papers">
+                        <!-- Dynamic content will be added here -->
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section">
+                <h1>Welcome to Siyafunda Siya Passa</h1>
+                <p>Your AI-Powered Grade 12 Learning Companion</p>
+                <div class="feature-cards">
+                    <div class="feature-card" data-card="study-guides">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Study Guides</h3>
+                        <p>Comprehensive CAPS-aligned study materials</p>
+                    </div>
+                    <div class="feature-card" data-card="subjects">
+                        <i class="fas fa-flask"></i>
+                        <h3>Subjects</h3>
+                        <p>All Grade 12 subjects at your fingertips</p>
+                    </div>
+                    <div class="feature-card" data-card="past-papers">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Past Papers</h3>
+                        <p>Practice with previous exam papers</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- EduBot Floating Button -->
+        <button class="edubot-button" id="edubotButton">
+            <i class="fas fa-robot"></i>
+            <span>EduBot</span>
+        </button>
+    </div>
+
+    <!-- Subject Selection Modal -->
+    <div id="subjectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Select a Subject</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Subject list will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
